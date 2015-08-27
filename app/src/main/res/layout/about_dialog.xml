@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sensor_scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/about_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/empty"
+        android:paddingTop="8dip"
+        android:src="@drawable/title_icon" />
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/about_image"
+        android:paddingLeft="10dip"
+        android:text="@string/app_name"
+        android:textColor="@color/yellow"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/about_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_title"
+        android:layout_toRightOf="@+id/about_image"
+        android:paddingLeft="10dip"
+        android:text="@string/app_author"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_author"
+        android:layout_toRightOf="@+id/about_image"
+        android:paddingLeft="10dip"
+        android:text="@string/app_version" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/about_image"
+        android:layout_below="@+id/about_image"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_about_text" />
+
+</RelativeLayout>
+</ScrollView>
